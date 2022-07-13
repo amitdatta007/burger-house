@@ -1,0 +1,313 @@
+:root{
+    --text-main-color: #3d2514;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+p{
+    color: var(--text-main-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+h1{
+    color: var(--text-main-color);
+    font-size: 7.5rem;
+    font-weight: 900;
+}
+h2{
+    color: var(--text-main-color);
+    font-size: 3rem;
+    font-weight: 900;
+}
+h3{
+    color: #fff;
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+}
+h4{
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+/* header css start here */
+.header{
+    height: 100vh;
+    width: 100vw;
+    background: url(../image/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* navbar css start here */
+.navber{
+    height: 22%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navber .logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navber .logo img{
+    width: 36%;
+}
+.navber .nav-menu{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: center;
+}
+.navber .nav-menu .delivery{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navber .nav-menu .delivery img{
+    width: 12%;
+}
+.navber .nav-menu .delivery p{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.navber .nav-menu .menu-item{
+    display: flex;
+    gap: 44px;
+}
+.navber .nav-menu .menu-item a{
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-main-color);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+/* navbar css end here */
+
+.banner{
+    width: 90%;
+    height: 78%;
+    /* background-color: green; */
+    display: flex;
+}
+.banner .banner-text-area{
+    width: 44%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.banner .banner-text-area p{
+    display: inline-block;
+    border: 2px dashed var(--text-main-color);
+    width: fit-content;
+    padding: 8px 12px;
+    font-weight: 600;
+}
+.banner .banner-text-area h1,h2{
+    font-family: 'Alfa Slab One', cursive;
+    line-height: 1;
+    text-indent: 0;
+    text-shadow: 3px 3px #fff;
+}
+.banner .banner-img-area{
+    width: 56%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.banner .banner-img-area img{
+    width: 88%;
+    height: fit-content;
+}
+.banner .banner-img-area .price-tag{
+    height: 140px;
+    width: 140px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    position: absolute;
+    top: 330px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner .banner-img-area .price-tag::before{
+    content: '';
+    position: absolute;
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    border: 2px dashed #fff;
+}
+.banner .banner-img-area .price-tag p:nth-child(1){
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.banner .banner-img-area .price-tag p:nth-child(1) span{
+    font-size: 2.4rem;
+}
+.banner .banner-img-area .price-tag p:nth-child(2){
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+/* banner css end here */
+/* header css end here */
+/* gallary css start here  */
+.gallary{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.gallary .gallary-items{
+    width: 90%;
+    height: 75%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.gallary .gallary-items .gallary-half-area{
+    width: 48%;
+    height: 100%;
+    /* background-color: yellow; */
+    position: relative;
+}
+.gallary .gallary-items .gallary-half-area:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gallary .gallary-items .gallary-half-area img{
+    width: 100%;
+    height: 100%;
+}
+.gallary .gallary-items .gallary-half-area .gallary-dhalf-area{
+    height: 46%;
+    width: 100%;
+    /* background-color: gray; */
+    position: relative;
+}
+.gallary .gallary-items .gallary-half-area a .gallary-img-link-text{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+}
+.gallary .burger-btn{
+    color: var(--text-main-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    background-color: #ffc045;
+    padding: 8px 16px;
+}
+/* gallary css end here  */
+/* choose area css start here  */
+.choose-area{
+    width: 100vw;
+    height: 120vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choose-area h2,p{
+    text-align: center;
+    text-shadow: none;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.choose-area .choose-text-area{
+    height: 22%;
+    width: 100%;
+    /* background-color: green; */
+}
+.choose-area .choose-items-area{
+    width: 94%;
+    height: 78%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+}
+.choose-area .choose-items-area .choose-item{
+    height: 100%;
+    width: 30%;
+    /* background-color: gray; */
+}
+.choose-area .choose-items-area .choose-item .choose-item-image{
+    width: 100%;
+    height: 60%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choose-area .choose-items-area .choose-item .choose-item-image img{
+    width: 80%;
+}
+.choose-area .choose-items-area .choose-item .choose-item-text{
+    height: 40%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.choose-area .choose-items-area .choose-item .choose-item-text h3{
+    color: var(--text-main-color);
+    text-align: center;
+}
+.choose-area .choose-items-area .choose-item .choose-item-text a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    background-color: #bf2222;
+    padding: 10px 36px;
+}
+/* choose area css start here  */
+
+/* event css start here  */
+.event-area{
+    height: 90vh;
+    width: 100Vw;
+    /* background-color: red; */
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.event-area .event-box{
+    height: 84%;
+    width: 90%;
+    /* background-color: gray; */
+    box-shadow: 8px 16px 16px #ddd;
+}
