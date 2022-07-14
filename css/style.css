@@ -1,5 +1,6 @@
 :root{
     --text-main-color: #3d2514;
+    --btn-bg-main: #bf2222;
 }
 
 
@@ -97,17 +98,15 @@ h4{
     letter-spacing: 2px;
 }
 /* navbar css end here */
-
+/* banner css start here */
 .banner{
     width: 90%;
     height: 78%;
-    /* background-color: green; */
     display: flex;
 }
 .banner .banner-text-area{
     width: 44%;
     height: 100%;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,7 +139,7 @@ h4{
 .banner .banner-img-area .price-tag{
     height: 140px;
     width: 140px;
-    background-color: #ff0000;
+    background-color: var(--btn-bg-main);
     border-radius: 50%;
     position: absolute;
     top: 330px;
@@ -188,7 +187,6 @@ h4{
 .gallary .gallary-items{
     width: 90%;
     height: 75%;
-    /* background-color: green; */
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
@@ -196,7 +194,6 @@ h4{
 .gallary .gallary-items .gallary-half-area{
     width: 48%;
     height: 100%;
-    /* background-color: yellow; */
     position: relative;
 }
 .gallary .gallary-items .gallary-half-area:last-child{
@@ -211,7 +208,6 @@ h4{
 .gallary .gallary-items .gallary-half-area .gallary-dhalf-area{
     height: 46%;
     width: 100%;
-    /* background-color: gray; */
     position: relative;
 }
 .gallary .gallary-items .gallary-half-area a .gallary-img-link-text{
@@ -233,7 +229,6 @@ h4{
 .choose-area{
     width: 100vw;
     height: 120vh;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,24 +243,20 @@ h4{
 .choose-area .choose-text-area{
     height: 22%;
     width: 100%;
-    /* background-color: green; */
 }
 .choose-area .choose-items-area{
     width: 94%;
     height: 78%;
-    /* background-color: yellow; */
     display: flex;
     justify-content: space-between;
 }
 .choose-area .choose-items-area .choose-item{
     height: 100%;
     width: 30%;
-    /* background-color: gray; */
 }
 .choose-area .choose-items-area .choose-item .choose-item-image{
     width: 100%;
     height: 60%;
-    /* background-color: black; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,7 +267,6 @@ h4{
 .choose-area .choose-items-area .choose-item .choose-item-text{
     height: 40%;
     width: 100%;
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -295,12 +285,10 @@ h4{
     padding: 10px 36px;
 }
 /* choose area css start here  */
-
 /* event css start here  */
 .event-area{
     height: 90vh;
     width: 100Vw;
-    /* background-color: red; */
     padding-top: 40px;
     display: flex;
     justify-content: center;
@@ -308,6 +296,204 @@ h4{
 .event-area .event-box{
     height: 84%;
     width: 90%;
-    /* background-color: gray; */
     box-shadow: 8px 16px 16px #ddd;
+    display: flex;
+    align-items: center;
 }
+.event-area .event-box .event-text-area{
+    width: 48%;
+    height: 94%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.event-area .event-box .event-text-area h3{
+    color: var(--text-main-color);
+    letter-spacing: 4px;
+}
+.event-area .event-box .event-text-area h2{
+    text-shadow: none;
+}
+.event-area .event-box .event-text-area p{
+    text-align: left;
+    text-transform: lowercase;
+}
+.event-area .event-box .event-image-area{
+    width: 52%;
+    height: 94%;
+}
+.event-area .event-box .event-image-area img{
+    width: 98%;
+    height: 100%;
+}
+/* event css end here  */
+/* book table area css start here  */
+.book-table{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+.book-table h3{
+    font-size: 2rem;
+    color: var(--text-main-color);
+    letter-spacing: 4px;
+}
+.book-table h2{
+    text-shadow: none;
+    letter-spacing: 6px;
+}
+.book-table .book-info-area{
+    width: 56%;
+    height: 50%;
+    margin-top: 40px;
+    display: flex;
+}
+.book-table .book-info-area .book-info-area-half{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.book-table .book-info-area .book-info-area-half input{
+    width: 90%;
+    height: 20%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+.book-table .book-info-area .book-info-area-half input::placeholder{
+    font-size: 1.2rem;
+    color: #888;
+}
+.book-table .book-info-area .book-info-area-half input:focus{
+    outline: none;
+}
+#date-input::before{
+    content: 'DATE';
+    margin-right: 10px;
+    color: #888;
+}
+#time-input::before{
+    content: 'TIME:';
+    margin-right: 10px;
+    color: #888;
+}
+.book-table .book-info-area .book-info-area-half button{
+    height: 20%;
+    width: 90%;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--btn-bg-main);
+    color: white;
+    font-size: 2.4rem;
+}
+.book-table img{
+    z-index: -10;
+}
+#burger-bg{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 340px;
+}
+#bottle-bg{
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    width: 300px;
+}
+#plate-bg{
+    position: absolute;
+    right: 0;
+    top: 35vh;
+}
+/* book table area css end here  */
+/* footer css start here  */
+footer{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+footer .footer-area{
+    width: 90%;
+    height: 90%;
+    background: url(../image/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .footer-area .footer-top-half{
+    width: 94%;
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+footer .footer-area .footer-bottom-half{
+    width: 94%;
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+footer .footer-area .footer-top-half .footer-top-left-half{
+    width: 45%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+footer .footer-area .footer-top-half .footer-top-left-half img{
+    width: 420px;
+}
+footer .footer-area .footer-top-half .footer-top-left-half p{
+    color: #fff;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+footer .footer-area .footer-top-half .footer-top-right-half{
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer .footer-area .footer-top-half .footer-top-right-half p{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: #fff;
+}
+footer .footer-area .footer-bottom-half p{
+    color: #fff;
+    letter-spacing: 2px;
+}
+footer .footer-area .footer-bottom-half .contact-logos{
+    display: flex;
+    gap: 10px;
+}
+footer .footer-area .footer-bottom-half .contact-logos img{
+    width: 32px;
+}
+/* footer css end here  */
